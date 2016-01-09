@@ -1,4 +1,4 @@
-package lightlogging
+package light_logging
 
 import (
 	"log"
