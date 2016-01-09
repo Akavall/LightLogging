@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 	"runtime"
+	"fmt"
 )
 
 func LogInfo(message string) {
@@ -15,7 +16,7 @@ func LogInfo(message string) {
 	var my_log = log.New(os.Stderr, "", log.LstdFlags|log.Lshortfile)
 	_, file, line, _ := runtime.Caller(1)
 
-	my_log.Info("INFO:", file, ":", line, "-", message)
+	my_log.Print("INFO:", file, ":", line, "-", log_message)
 }
 
 func LogWarning(message string) {
